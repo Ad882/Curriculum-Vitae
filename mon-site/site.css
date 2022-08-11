@@ -1,0 +1,579 @@
+/*  GENERAL   */
+
+
+html {
+  scroll-behavior:smooth
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  background-image:url(earth-space-shuttle.jpg);
+  background-repeat: no-repeat;
+  color: rgb(250, 243, 233);
+}
+
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
+#navbar {
+  display: flex;
+  flex-shrink: 0;
+  height: 153px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  -webkit-transition: 0.48s;
+  transition: 0.48s;
+  z-index: 100;
+}
+
+.rest{
+  background: linear-gradient(rgb(106,140,165), rgb(124, 66, 190));
+  display: grid;
+  grid-template-columns: 800px 1fr;
+  grid-gap: 75px;
+  width: 100%;
+  margin: 0;
+}
+
+.footer{
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  background-color: #0b0229;
+}
+ 
+
+/*  HEADER  */
+
+
+
+.profile-picture{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.me{
+  max-height: 93%;
+  border-style: solid;
+  border-color: rgb(250, 243, 233);
+  border-width: 2px;
+  border-radius: 120px;
+
+  transition: opacity 0.2s;
+}
+
+.me:hover{
+  opacity: 0.08;
+}
+
+.profile-picture .bigger-me{
+  position: absolute;
+  height: 200%;
+  border-style: solid;
+  border-color: rgb(250, 243, 233);
+  border-width: 2px;
+  border-radius: 300px;
+
+
+
+  left: 100px;
+  bottom: -200px;
+
+  opacity: 0;
+  transition: opacity 0.18s;
+  pointer-events: none;
+}
+
+.profile-picture:hover .bigger-me{
+  opacity: 1;
+}
+
+
+
+
+.CV{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 40px;
+  margin-right: 40px;
+  flex: auto;
+  text-size-adjust: auto;
+}
+
+.CV-section{
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: opacity 0.2s, font-weight 0.2s;
+  
+}
+
+.CV-section:hover{
+  cursor: pointer;
+  opacity: 0.96;
+  font-weight: bolder;
+}
+
+.link{
+  color: rgb(250, 243, 233);
+}
+
+
+
+.name-and-title{
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  text-size-adjust: auto;
+}
+
+.name-and-title:hover{
+  cursor: none;
+}
+
+.name-position{
+  position: relative;
+}
+
+.name{
+  margin: 0;
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-size: 82px;
+  text-size-adjust: auto;
+}
+
+.title-position{
+  position: absolute;
+  left: 76px;
+  bottom: 4px;
+}
+
+.title{
+  margin: 0;
+  font-size: 17px;
+  font-family: 'Gulzar', serif;
+  text-size-adjust: auto;
+}
+
+
+
+
+.contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mail-position{
+  position: relative;
+  display: flex;
+}
+
+.mail{
+  max-width: 60px;
+  padding-right: 20px;
+  transition: opacity 0.2s, width 0.2s;
+}
+
+.mail:hover{
+  width: 64px;
+  opacity: 0.78;
+}
+
+.mail-position .info{
+  position: absolute;
+  background-color: rgb(189, 172, 172);
+  font-family: Arial;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 4px;
+  padding-left: 4px;
+  color:rgb(250, 243, 233);
+  border-radius: 3px;
+  left: -100px;
+  bottom: -60px;
+
+  opacity: 0;
+  transition: opacity 0.18s;
+  pointer-events: none;
+}
+
+
+.mail-position:hover .info{
+  opacity: 1;
+}
+
+
+.phone-position{
+  position: relative;
+  display: flex;
+}
+
+.phone{
+  max-width: 48px;
+  transition: opacity 0.2s, height 0.2s;
+}
+
+.phone:hover{
+  max-width: 54px;
+  opacity: 0.78;
+}
+
+.phone-position .info{
+  position: absolute;
+  background-color: rgb(189, 172, 172);
+  font-family: Arial;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 4px;
+  padding-left: 4px;
+  color: rgb(250, 243, 233);
+  border-radius: 3px;
+  left: -70px;
+  bottom: -50px;
+
+  opacity: 0;
+  transition: opacity 0.18s;
+  pointer-events: none;
+}
+
+.phone-position:hover .info{
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+/* PART. 1 */
+
+.my-description{
+  display: block;
+  max-width: 628px;
+  padding:15px 15px;
+  font-size:30px;
+  margin-top: 86px;
+  margin-bottom: 27px;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.Hello{
+  font-size:80px;
+  margin-bottom: 52px;
+}
+
+.presentation{
+  margin-bottom: 12px;
+}
+
+.commitment1{
+  margin-bottom: 0px;
+}
+
+.Stade{
+  color: rgb(211,12,20);
+  font-weight: bolder;
+}
+
+.Toulousain{
+  color: black;
+  font-weight: bolder;
+}
+
+
+.commitment2{
+  color: black;
+  font-weight: bolder;
+  margin-top: 6px;
+}
+
+
+.qualities{
+  color: black;
+  font-weight: bolder;
+}
+
+
+
+
+
+/* PART. 2 */ 
+
+
+
+
+.CV-details{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+
+
+
+#mon-parcours-scolaire{
+  margin-top: 32px;
+  margin-left: 15px;
+  font-size: 52px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.subtitle{
+  display: block;
+  margin: 0;
+  margin-left: 35px;
+
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: underline;
+}
+
+.details{
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 55px;
+  margin-bottom: 65px;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.school-name{
+  position: relative;
+  font-weight: bold;
+}
+
+.star{
+  position: relative;
+
+}
+
+.school-link{
+  text-decoration: none;
+  color: rgb(250, 243, 233);
+}
+
+.school-link:hover{
+  cursor: help;
+}
+
+.school-name .school-picture{
+  position: absolute;
+  right: -800px;
+  width: 300px;
+  opacity: 0;
+  transition: opacity 0.18s;
+}
+
+.school-name:hover .school-picture{
+  opacity: 1;
+}
+
+.Competition{
+  text-decoration: underline;
+}
+
+#Mines-Pont{
+  margin-right: 650px;
+}
+
+.electives{
+  margin-right: 560px;
+}
+
+
+
+
+
+
+#mes-expériences{
+  margin-top: 32px;
+  margin-left: 15px;
+  font-size: 52px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+
+#mes-compétences{
+  margin-top: 32px;
+  margin-left: 15px;
+  font-size: 52px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.skill{
+  text-decoration: underline;
+}
+
+
+.info-skill{
+  text-decoration: underline;
+  color: rgb(250, 243, 233);
+}
+
+.info-skill:hover{
+  cursor: help;
+}
+
+
+
+
+#mes-passions{
+  margin-top: 32px;
+  margin-left: 15px;
+  font-size: 52px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.right-part{
+  margin-top: 32px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.card{
+  margin-top: 2650px;
+  position: relative;
+  width: 600px;
+  height: 350px;
+  background-color: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.card .circle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card .circle::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(188, 21, 33);
+  clip-path: circle(120px at center);
+  transition: 0.5s;
+}
+
+.card:hover .circle::before{
+  background-color: rgb(33, 45, 87);
+  clip-path: circle(400px at center);
+  border-radius: 20px;
+}
+
+
+
+.card img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 220px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.card:hover img{
+  left: 82%;
+  height: 300px;
+}
+
+
+.card .rugby-content{
+  position: relative;
+  width: 48%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card:hover .rugby-content{
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card .rugby-content h2{
+  color: rgb(250, 243, 233);
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.card .rugby-content p{
+  color: rgb(250, 243, 233);
+}
+
+
+@media (max-width: 991px){
+  .card{
+    width: auto;
+    max-width: 350px;
+    align-items: flex-start;
+    margin: 10px;
+  }
+
+  .card:hover{
+    height: 600px;
+  }
+
+  .card .rugby-content{
+    width: 100%;
+    left: 0;
+    padding: 40px;
+  }
+
+  .card:hover img{
+    top: 70%;
+    left: 50%;
+    height: 300px;
+  }
+}
+
+
+
+
+
+
+
+/* PART. 3 */
+

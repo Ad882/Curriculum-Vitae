@@ -1,6 +1,6 @@
 var prevScrollpos = window.pageYOffset;
 
-window.onscroll = function() {
+let NavbarAnimation = () => {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
@@ -54,3 +54,8 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
+
+window.onscroll = function() {
+  calcScrollValue();
+  NavbarAnimation();
+}

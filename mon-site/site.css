@@ -1,8 +1,13 @@
 /*  GENERAL   */
 
+*{
+  box-sizing: border-box;
+}
 
 html {
-  scroll-behavior:smooth
+  scroll-behavior:smooth;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 body {
@@ -10,7 +15,7 @@ body {
   flex-direction: column;
   width: 100%;
   margin: 0;
-  background-image:url(earth-space-shuttle.jpg);
+  background-image:url(earth-space-shuttle-V2.jpg);
   background-repeat: no-repeat;
   color: rgb(250, 243, 233);
 }
@@ -35,10 +40,8 @@ a:link
 
 .rest{
   background: linear-gradient(rgb(106,140,165), rgb(124, 66, 190));
-  display: grid;
-  grid-template-columns: 800px 1fr;
-  grid-gap: 75px;
   width: 100%;
+  max-height: 5000px;
   margin: 0;
 }
 
@@ -48,7 +51,32 @@ a:link
   margin: 0;
   background-color: #0b0229;
 }
- 
+
+
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #0b0229;
+}
+
 
 /*  HEADER  */
 
@@ -109,11 +137,12 @@ a:link
   margin-left: 40px;
   margin-right: 40px;
   flex: auto;
-  text-size-adjust: auto;
+  flex-shrink: 0;
 }
 
 .CV-section{
   font-size: 18px;
+  padding-right: 14px;
   font-family: 'Source Sans Pro', sans-serif;
   transition: opacity 0.2s, font-weight 0.2s;
   
@@ -272,10 +301,11 @@ a:link
 .my-description{
   display: block;
   max-width: 628px;
+  max-height: 1050px;
   padding:15px 15px;
   font-size:30px;
   margin-top: 86px;
-  margin-bottom: 27px;
+  margin-bottom: 62px;
 
   font-family: 'Raleway', sans-serif;
 }
@@ -323,7 +353,9 @@ a:link
 
 /* PART. 2 */ 
 
-
+.left-part{
+  max-width: 800px;
+}
 
 
 .CV-details{
@@ -381,7 +413,7 @@ a:link
 
 .school-name .school-picture{
   position: absolute;
-  right: -800px;
+  right: -1000px;
   width: 300px;
   opacity: 0;
   transition: opacity 0.18s;
@@ -394,16 +426,6 @@ a:link
 .Competition{
   text-decoration: underline;
 }
-
-#Mines-Pont{
-  margin-right: 650px;
-}
-
-.electives{
-  margin-right: 560px;
-}
-
-
 
 
 
@@ -451,16 +473,18 @@ a:link
   font-family: 'Raleway', sans-serif;
 }
 
-.right-part{
-  margin-top: 32px;
-  display: flex;
+
+
+#sport{
   position: relative;
-  align-items: center;
 }
 
+
 .card{
-  margin-top: 2650px;
-  position: relative;
+  position: absolute;
+  right: -700px;
+
+
   width: 600px;
   height: 350px;
   background-color: none;

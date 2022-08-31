@@ -48,7 +48,7 @@ a:link
 
 .footer{
   width: 3500px;
-  height: 300px;
+  height: 200px;
   margin: 0;
   background-color: #0b0229;
 }
@@ -222,8 +222,7 @@ a:link
 }
 
 .mail:hover{
-  width: 64px;
-  opacity: 0.78;
+  opacity: 0.68;
 }
 
 .mail-position .info{
@@ -263,8 +262,7 @@ a:link
 }
 
 .phone:hover{
-  max-width: 54px;
-  opacity: 0.78;
+  opacity: 0.68;
 }
 
 .phone-position .info{
@@ -414,21 +412,96 @@ a:link
   cursor: help;
 }
 
-.school-name .school-picture{
+.school-picture{
   position: absolute;
-  right: -1000px;
-  width: 300px;
-  opacity: 0;
-  transition: opacity 0.18s;
+  left: 480px;
+  width: 180px;
+  opacity: 0.56;
+  transition: opacity 0.5s;
+}
+#fdh{
+  left: 840px;
 }
 
-.school-name:hover .school-picture{
+.school-picture:hover{
   opacity: 1;
+}
+
+
+
+.container{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  left: 480px;
+  top: -80px;
+}
+
+.container .card1{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+}
+
+.container .card1 .imgsup{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.container .card1:hover .imgsup{
+  transform: translateY(-100px);
+}
+
+.container .card1 .imgsup img{
+  max-width: 100%;
+  margin: 0 0 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.container .card1:hover .imgsup img{
+  transform: translate(-20px,-40px) rotate(-15deg) scale(1.4);
 }
 
 .Competition{
   text-decoration: underline;
 }
+
+.container .card1 .content1{
+  position: absolute;
+  display: flex;
+  bottom: -140px;
+  left: 18px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+  color: black;
+  font-size: 11px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .card1:hover .content1{
+  
+  opacity: 0.98;
+  visibility: visible;
+}
+
 
 
 

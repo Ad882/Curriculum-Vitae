@@ -6,8 +6,6 @@
 
 html {
   scroll-behavior:smooth;
-  min-height: 100%;
-  min-width: 100%;
 }
 
 body {
@@ -15,10 +13,15 @@ body {
   flex-direction: column;
   width: 100%;
   margin: 0;
-  background-image:url(earth-space-shuttle-V2.jpg);
-  background-repeat: no-repeat;
   color: rgb(250, 243, 233);
 }
+
+
+.global{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 a:link 
 { 
@@ -28,26 +31,46 @@ a:link
 #navbar {
   display: flex;
   justify-content: space-between;
-  flex-shrink: 0;
+  align-items: center;
   height: 153px;
   position: fixed;
   top: 0;
   width: 100%;
+  max-width: 1920px;
+  min-width: 980px;
   transition: top 0.3s;
   -webkit-transition: 0.48s;
   transition: 0.48s;
   z-index: 100;
 }
 
+.introduction{
+  display: grid;
+  grid-template-columns: 0.64fr 1fr;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  max-height: 1200px;
+  background-image:url(earth-space-shuttle.jpg);
+  background-repeat: no-repeat;
+  margin-top: 153px;
+  font-size: 34px;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 15px;
+
+}
+
+
 .rest{
   background: linear-gradient(rgb(106,140,165), rgb(124, 66, 190));
-  width: 3500px;
-  max-height: 5000px;
+  width: 100%;
+  max-width: 1920px;
   margin: 0;
 }
 
 .footer{
-  width: 3500px;
+  width: 100%;
+  max-width: 1920px;
   height: 200px;
   margin: 0;
   background-color: #0b0229;
@@ -79,56 +102,60 @@ a:link
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  HEADER  */
 
 
 
 .profile-picture{
+  flex: 0.5;
+  margin-right: 12px;
+}
+
+.my-picture{
   position: relative;
-  display: flex;
-  max-width: 200px;
-  justify-content: center;
-  align-items: center;
-  margin-left: 12px;
+  flex: auto;
+  padding-left: 8px;
+  padding-top: 8px;
 }
 
 .me{
-  max-height: 93%;
+  height: 153px;
   border-style: solid;
   border-color: rgb(250, 243, 233);
   border-width: 2px;
   border-radius: 120px;
-
-  transition: opacity 0.2s;
 }
-
-.me:hover{
-  opacity: 0.08;
-}
-
-.profile-picture .bigger-me{
-  position: absolute;
-  height: 200%;
-  border-style: solid;
-  border-color: rgb(250, 243, 233);
-  border-width: 2px;
-  border-radius: 300px;
-
-
-
-  left: 100px;
-  bottom: -200px;
-
-  opacity: 0;
-  transition: opacity 0.18s;
-  pointer-events: none;
-}
-
-.profile-picture:hover .bigger-me{
-  opacity: 1;
-}
-
-
 
 
 .CV{
@@ -208,6 +235,7 @@ a:link
   justify-content: space-between;
   align-items: center;
   margin-left: 34px;
+  margin-right: 12px;
 }
 
 .mail-position{
@@ -297,34 +325,31 @@ a:link
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* PART. 1 */
-
-.my-description{
-  display: block;
-  max-width: 628px;
-  max-height: 1050px;
-  padding:15px 15px;
-  font-size:30px;
-  margin-top: 86px;
-  margin-bottom: 62px;
-
-  font-family: 'Raleway', sans-serif;
-}
 
 
 .Hello{
   font-size:80px;
   margin-bottom: 52px;
 }
-
-.presentation{
-  margin-bottom: 12px;
-}
-
-.commitment1{
-  margin-bottom: 0px;
-}
-
 .Stade{
   color: rgb(211,12,20);
   font-weight: bolder;
@@ -336,17 +361,34 @@ a:link
 }
 
 
-.commitment2{
-  color: black;
-  font-weight: bolder;
-  margin-top: 6px;
-}
 
 
-.qualities{
-  color: black;
-  font-weight: bolder;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -362,7 +404,6 @@ a:link
 .CV-details{
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
 }
 
 
@@ -393,6 +434,8 @@ a:link
   font-family: 'Catamaran', sans-serif;
 }
 
+
+
 .school-name{
   position: relative;
   font-weight: bold;
@@ -420,7 +463,14 @@ a:link
   transition: opacity 0.5s;
 }
 #fdh{
-  left: 840px;
+  left: 900px;
+}
+
+#unipi{
+  top: -180px;
+  left: 470px;
+  height: 380px;
+  width: 380px;
 }
 
 .school-picture:hover{
@@ -436,7 +486,7 @@ a:link
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  left: 480px;
+  left: 465px;
   top: -80px;
 }
 
@@ -668,6 +718,21 @@ a:link
     height: 300px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -479,6 +479,12 @@ a:link
 }
 
 
+#flags{
+  left: 900px;
+  width: 380px;
+}
+
+
 
 .container{
   position: absolute;

@@ -478,6 +478,11 @@ a:link
   opacity: 1;
 }
 
+#ST{
+  top: 10px;
+  left: 700px;
+  width: 300px;
+}
 
 #flags{
   top: -175px;

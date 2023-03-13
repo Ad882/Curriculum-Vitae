@@ -754,13 +754,21 @@ a:link
 
 
 
-
-
-
-
-
-
-
-
 /* PART. 3 */
 
+
+.foot_img{
+display: flex;
+flex: auto;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+text-size-adjust: auto;
+height: 100%;
+}
+
+.logo_footer{
+  position: relative;
+  height: 153px;
+}

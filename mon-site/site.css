@@ -480,9 +480,22 @@ a:link
 
 
 #flags{
-  left: 900px;
+  top: -175px;
+  left: 650px;
   width: 380px;
 }
+
+
+#progr{
+  top: -175px;
+  left: 850px;
+  width: 480px;
+}
+
+#progr:hover{
+  cursor: auto;
+}
+
 
 
 
@@ -583,11 +596,13 @@ a:link
 }
 
 .skill{
+  position: relative;
   text-decoration: underline;
 }
 
 
 .info-skill{
+  position: relative;
   text-decoration: underline;
   color: rgb(250, 243, 233);
 }

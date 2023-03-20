@@ -437,12 +437,12 @@ a:link
   transition: opacity 0.5s;
 }
 #fdh{
-  left: 900px;
+  left: 1000px;
 }
 
 #unipi{
   top: -180px;
-  left: 470px;
+  left: 570px;
   height: 380px;
   width: 380px;
 }
@@ -453,7 +453,7 @@ a:link
 
 #ST{
   top: 10px;
-  left: 700px;
+  left: 750px;
   width: 300px;
 }
 

@@ -14,7 +14,6 @@ body {
   width: 100%;
   margin: 0;
   color: rgb(250, 243, 233);
-  background-color: black;
 }
 
 
@@ -55,7 +54,7 @@ a:link
   background-image:url(earth-space-shuttle.jpg);
   background-repeat: no-repeat;
   margin-top: 153px;
-  font-size: 32px;
+  font-size: 34px;
   font-family: 'Raleway', sans-serif;
   padding-left: 15px;
 
@@ -70,6 +69,9 @@ a:link
 }
 
 .footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: 1920px;
   height: 200px;
@@ -351,6 +353,33 @@ a:link
   font-size:80px;
   margin-bottom: 52px;
 }
+.Stade{
+  color: rgb(211,12,20);
+  font-weight: bolder;
+}
+
+.Toulousain{
+  color: black;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -437,12 +466,13 @@ a:link
   transition: opacity 0.5s;
 }
 #fdh{
-  left: 1000px;
+  top: -80px;
+  left: 900px;
 }
 
 #unipi{
   top: -180px;
-  left: 570px;
+  left: 600px;
   height: 380px;
   width: 380px;
 }
@@ -451,21 +481,27 @@ a:link
   opacity: 1;
 }
 
+
 #ST{
-  top: 10px;
+  top: 30px;
   left: 750px;
-  width: 300px;
+  width: 280px;
+}
+
+#Gosselin{
+  top: -100px;
+  width: 205px;
 }
 
 #flags{
-  top: -175px;
-  left: 650px;
+  top: -105px;
+  left: 705px;
   width: 380px;
 }
 
 
 #progr{
-  top: -175px;
+  top: -105px;
   left: 850px;
   width: 480px;
 }
@@ -477,6 +513,16 @@ a:link
 
 
 
+
+
+
+
+
+
+
+
+
+
 .container{
   position: absolute;
   z-index: 10;
@@ -484,8 +530,8 @@ a:link
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  left: 465px;
-  top: -80px;
+  left: 500px;
+  top: -100px;
 }
 
 .container .card1{
@@ -637,13 +683,13 @@ a:link
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(188, 21, 33);
+  background-color: rgba(62,142,232,255);
   clip-path: circle(120px at center);
   transition: 0.5s;
 }
 
 .card:hover .circle::before{
-  background-color: rgb(33, 45, 87);
+  background-color: rgba(30,30,30,255);
   clip-path: circle(400px at center);
   border-radius: 20px;
 }
@@ -718,6 +764,14 @@ a:link
     height: 300px;
   }
 }
+
+
+
+
+
+
+
+
 
 
 
